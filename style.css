@@ -1,13 +1,26 @@
 body
-{
+    {
 	background-color: black; 
 	font-family: Verdana;
 	font-size: 20px;
 	color: white;
+    }
+
+#container
+{
+  
+}
+/* The animation code */
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
 }
 
-h1
-{
-	font-size: 48px;
-	color: red !important;
+/* The element to apply the animation to */
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
 }
